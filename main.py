@@ -2,8 +2,13 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(
+    page_title = 'Task Monitoring app',
     layout="wide",
 )
+
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
+
 
 st.markdown("<h2 style='text-align: center; color: #0c1864;'>Task Monitoring App</h2>", unsafe_allow_html=True)
 st.markdown("")
