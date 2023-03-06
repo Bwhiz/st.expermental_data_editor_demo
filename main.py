@@ -9,15 +9,16 @@ st.set_page_config(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
-
+# Title
 st.markdown("<h2 style='text-align: center; color: #0c1864;'>Task Monitoring App</h2>", unsafe_allow_html=True)
 st.markdown("")
 
-
+# initializing df
 df = pd.DataFrame(
     [{'TASKS':'','STATUS' : False}])
 df.index = df.index+1
 
+# adding columns to center st.experimental_data_editor
 col1, col2, col3 = st.columns([0.25, 1, 0.25])
 
 #st.eperimental_data_editor:
@@ -29,6 +30,7 @@ pending_tasks = final_df.copy()
 pending_tasks.columns= ['LIST OF PENDING TASKS']
 
 st.markdown("")
+# adding columns to center list of pending tasks table;
 col4, col5, col6 = st.columns([0.25, 1, 0.25])
 
 with col5:
