@@ -8,3 +8,6 @@ off tasks they've completed while seeing a list of pending tasks to complete.
 
 This simple app is hosted [here](https://bwhiz-st-expermental-data-editor-demo-main-c4urj2.streamlit.app/).
 
+A snapshot of the app is shown below:
+
+![alt-text](https://github.com/Bwhiz/st.expermental_data_editor_demo/blob/master/additional_files/monitoring_app_pending.jpeg)
